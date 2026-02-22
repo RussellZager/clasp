@@ -179,7 +179,7 @@ export function buildMcpServer(auth: AuthInfo) {
             // Human-readable output.
             {
               type: 'text',
-              text: `Pushed project in ${projectDir} to remote server successfully.`,
+              text: `Pulled project in ${projectDir} from remote server successfully.`,
             },
             ...fileList,
           ],
@@ -197,7 +197,7 @@ export function buildMcpServer(auth: AuthInfo) {
           content: [
             {
               type: 'text',
-              text: `Error cloning project: ${err.message}`,
+              text: `Error pulling project: ${err.message}`,
             },
           ],
         };
